@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Voting App</display-name>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.votingapp.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.votingapp.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>com.votingapp.Admin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Voting</servlet-name>
+		<servlet-class>com.votingapp.Voting</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Voting</servlet-name>
+		<url-pattern>/vote</url-pattern>
+	</servlet-mapping>
+
+</web-app>
